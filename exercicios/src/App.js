@@ -7,9 +7,13 @@ import MinMax from './components/MinMax'
 import Aleatorio from './components/Aleatorio' 
 import Titulo from './components/Titulo' 
 import Botao from './components/Botao' 
+import Contador from './components/Contador'
+import Pai from './components/direta/Pai'
 
 export default _ => (
 	<View style={style.App}>
+		<Pai/>
+		<Contador inicial={100} />
 		<Botao/>
 		<Titulo principal="Principal" secundario="Wolf"/>
 		<Aleatorio min={5} max={15}/>
